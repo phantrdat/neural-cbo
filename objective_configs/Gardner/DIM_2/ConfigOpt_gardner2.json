@@ -1,0 +1,17 @@
+{
+    "objective_type": "synthetic",
+    "algorithm_type": "ConfigOpt",
+    "function_name": "Gardner",
+    "dimension": 2,
+    "n_constraints": 1,
+    "gp_kernel": "Gaussian",
+    "n_init": 5,
+    "n_iters": 100,
+    "n_raw_samples": 20000,
+    "discretize_num": 100,
+    "first_run": 1,
+    "last_run": 11,
+    "use_cuda": true,
+    "optimal_point": [4.71239, 1.25324], 
+    "best_feasible_y": 0.253236
+}

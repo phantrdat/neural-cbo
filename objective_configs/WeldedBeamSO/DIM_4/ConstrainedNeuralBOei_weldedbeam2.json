@@ -1,0 +1,40 @@
+{
+    "objective_type": "synthetic",
+    "algorithm_type": "Constrained_NeuralBO_EI",
+    "function_name": "WeldedBeamSO",
+    "dimension": 4,
+    "n_constraints": 6,
+    "n_init": 20,
+    "n_iters": 500,
+
+    "target_n_layers": 2,
+    "target_hidden_size": 128,
+    "target_learning_rate": 0.01,
+    "target_epochs": 512,
+    "target_weight_decay": 1e-3,
+    
+    "constraints_n_layers": [4,4,2,2,4,2],
+    "constraints_hidden_sizes": [16, 16, 32, 32, 16, 32],
+    "constraints_learning_rates": [1, 1, 0.001, 0.001, 1, 0.001],
+    "constraints_epochs": [512, 512, 512, 512, 512, 512],
+    "constraints_weight_decay": [1e-3, 1e-3, 1e-3, 1e-3, 1e-3, 1e-3],
+
+    "use_lr_scheduler": false,
+    "activation": "relu",
+    "normalized_inputs": true,
+    "normalized_outputs": false,
+    "n_raw_samples": 50000,
+    "update_cycle": 1,
+    "delta": 0.5,
+
+    "adaptive_exploration": false,
+    "target_exploration_coeff": 1,
+    "constraints_exploration_coeff": [1],
+    "feature_mode": "dynamic",
+    "use_matrix_inversion_appoximation": false,
+    "first_run": 1,
+    "last_run": 11,
+    "use_cuda": true,
+    "optimal_point": [0.205729639770726, 3.47048866582864, 9.03662391069483, 0.205729639770726], 
+    "best_feasible_y": 1.72485230854216631
+}

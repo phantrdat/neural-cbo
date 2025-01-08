@@ -1,0 +1,17 @@
+{
+    "objective_type": "synthetic",
+    "algorithm_type": "cEI",
+    "function_name": "GasTransmission",
+    "dimension": 4,
+    "n_constraints": 1,
+    "gp_kernel": "Gaussian",
+    "n_init": 5,
+    "n_iters": 100,
+    "n_raw_samples": 10000,
+    "discretize_num": 50,
+    "first_run": 1,
+    "last_run": 11,
+    "use_cuda": true, 
+    "optimal_point": [20.2302,  5.0754, 20.8700,  0.1013], 
+    "best_feasible_y": -0.4086
+}

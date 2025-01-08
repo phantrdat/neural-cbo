@@ -1,0 +1,38 @@
+{
+    "objective_type": "realworld",
+    "algorithm_type": "Neural-CBO",
+    "function_name": "SensitiveSample",
+    "dimension": 49,
+    "n_constraints": 1,
+    "n_init": 10,
+    "n_iters": 200,
+
+    "target_n_layers": 2,
+    "target_hidden_size": 256,
+    "target_learning_rate": 0.0001,
+    "target_epochs": 128,
+    "target_weight_decay": 1e-3,
+    
+    "constraints_n_layers": [2],
+    "constraints_hidden_sizes": [256],
+    "constraints_learning_rates": [0.0001],
+    "constraints_epochs": [128],
+    "constraints_weight_decay": [5e-3],
+
+    "use_lr_scheduler": false,
+    "activation": "relu",
+    "normalized_inputs": true,
+    "normalized_outputs": false,
+    "n_raw_samples": 10000,
+    "update_cycle": 1,
+    "delta": 0.5,
+
+    "adaptive_exploration": false,
+    "target_exploration_coeff": 1,
+    "constraints_exploration_coeff": [1],
+    "feature_mode": "dynamic",
+    "use_matrix_inversion_appoximation": false,
+    "first_run": 1,
+    "last_run": 11,
+    "use_cuda": true
+}

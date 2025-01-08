@@ -1,0 +1,108 @@
+{   
+    "dimension": 5,
+    "optimal_point": [-2.59677896, -2.65782326, -2.60622396, -2.63445386, -2.60167055], 
+    "best_feasible_y": -10.389344963644422,
+    "target": {
+        "module_name": "ackley",
+        "identifier": "Ackley",
+        "n_init_observations": 3,
+        "use_standardization": false,
+        "noise_std": 0.05,
+        "ard": true,
+        "is_hyperparameter_trainable": true,
+        "gp_prior": {
+            "lengthscale": {
+                "gamma": {
+                    "concentration": 0.25,
+                    "rate": 0.5
+                }
+            },
+            "outputscale": {
+                "gamma": {
+                    "concentration": 2.0,
+                    "rate": 0.15
+                }
+            },
+            "noise_std": {
+                "gaussian": {
+                    "loc": 0.0,
+                    "scale": 0.1
+                }
+            }
+        }
+    },
+    "constraints": [
+        {
+            "module_name": "ackley_constraint1",
+            "identifier": "ackley_constraint1",
+            "share_observation_with_constraint": -1,
+            "n_init_observations": 3,
+            "use_standardization": false,
+            "noise_std": 0.5,
+            "ard": true,
+            "is_hyperparameter_trainable": true,
+            "inequality": "less_than_equal_to",
+            "threshold": 0,
+            "fix_mean_at": 0,
+            "gp_prior": {
+                "lengthscale": {
+                    "gamma": {
+                        "concentration": 0.25,
+                        "rate": 0.5
+                    }
+                },
+                "outputscale": {
+                    "gamma": {
+                        "concentration": 2.0,
+                        "rate": 0.15
+                    }
+                },
+                "noise_std": {
+                    "gaussian": {
+                        "loc": 0.0,
+                        "scale": 0.1
+                    }
+                }
+            }
+        }, 
+        {
+            "module_name": "ackley_constraint2",
+            "identifier": "ackley_constraint2",
+            "share_observation_with_constraint": -1,
+            "n_init_observations": 3,
+            "use_standardization": false,
+            "noise_std": 0.5,
+            "ard": true,
+            "is_hyperparameter_trainable": true,
+            "inequality": "less_than_equal_to",
+            "threshold": 0,
+            "fix_mean_at": 0,
+            "gp_prior": {
+                "lengthscale": {
+                    "gamma": {
+                        "concentration": 0.25,
+                        "rate": 0.5
+                    }
+                },
+                "outputscale": {
+                    "gamma": {
+                        "concentration": 2.0,
+                        "rate": 0.15
+                    }
+                },
+                "noise_std": {
+                    "gaussian": {
+                        "loc": 0.0,
+                        "scale": 0.1
+                    }
+                }
+            }
+        }
+    ],
+    "xsize": 50,
+    "zsize": 50,
+    "n_bo_iterations": 200,
+    "beta": 40.0,
+    "n_training_iter_gp_hyper": 10,
+    "update_gp_hyper_every_iter": 1
+}

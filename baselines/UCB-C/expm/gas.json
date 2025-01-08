@@ -1,0 +1,75 @@
+{   
+    "dimension": 4,
+    "optimal_point": [20.2302,  5.0754, 20.8700,  0.1013], 
+    "best_feasible_y": -0.4086,
+    "target": {
+        "module_name": "gas_transmission_2_3_15_obj",
+        "identifier": "GasTransmission",
+        "n_init_observations": 7,
+        "use_standardization": false,
+        "noise_std": 0.01,
+        "ard": true,
+        "is_hyperparameter_trainable": true,
+        "gp_prior": {
+            "lengthscale": {
+                "gamma": {
+                    "concentration": 0.25,
+                    "rate": 0.5
+                }
+            },
+            "outputscale": {
+                "gamma": {
+                    "concentration": 2.0,
+                    "rate": 0.15
+                }
+            },
+            "noise_std": {
+                "gaussian": {
+                    "loc": 0.0,
+                    "scale": 0.1
+                }
+            }
+        }
+    },
+    "constraints": [
+        {
+            "module_name": "gas_transmission_2_3_15_cst",
+            "share_observation_with_constraint": -1,
+            "identifier": "GasTransmission",
+            "n_init_observations": 7,
+            "use_standardization": false,
+            "noise_std": 0.01,
+            "ard": true,
+            "is_hyperparameter_trainable": true,
+            "inequality": "less_than_equal_to",
+            "threshold": -0.5,
+            "fix_mean_at": -0.5,
+            "gp_prior": {
+                "lengthscale": {
+                    "gamma": {
+                        "concentration": 0.25,
+                        "rate": 0.5
+                    }
+                },
+                "outputscale": {
+                    "gamma": {
+                        "concentration": 2.0,
+                        "rate": 0.15
+                    }
+                },
+                "noise_std": {
+                    "gaussian": {
+                        "loc": 0.0,
+                        "scale": 0.1
+                    }
+                }
+            }
+        }
+    ],
+    "xsize": 100,
+    "zsize": 100,
+    "n_bo_iterations": 100,
+    "beta": 20.0,
+    "n_training_iter_gp_hyper": 30,
+    "update_gp_hyper_every_iter": 1
+}

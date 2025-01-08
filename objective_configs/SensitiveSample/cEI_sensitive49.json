@@ -1,0 +1,15 @@
+{
+    "objective_type": "realworld",
+    "algorithm_type": "cEI",
+    "function_name": "SensitiveSample",
+    "dimension": 25,
+    "n_constraints": 1,
+    "gp_kernel": "Gaussian",
+    "n_init": 10,
+    "n_iters": 200,
+    "n_raw_samples": 1000,
+    "discretize_num": 1,
+    "first_run": 11,
+    "last_run": 31,
+    "use_cuda": true
+}

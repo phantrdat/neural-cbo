@@ -1,0 +1,40 @@
+{
+    "objective_type": "synthetic",
+    "algorithm_type": "Noiseless_NeuralEI_With_LCB_Constraints",
+    "function_name": "Hartmann",
+    "dimension": 6,
+    "n_constraints": 1,
+    "n_init": 10,
+    "n_iters": 200,
+
+    "target_n_layers": 2,
+    "target_hidden_size": 1024,
+    "target_learning_rate": 0.001,
+    "target_epochs": 128,
+    "target_weight_decay": 5e-3,
+    
+    "constraints_n_layers": [2],
+    "constraints_hidden_sizes": [1024],
+    "constraints_learning_rates": [0.001],
+    "constraints_epochs": [128],
+    "constraints_weight_decay": [1e-3],
+
+    "use_lr_scheduler": false,
+    "activation": "relu",
+    "normalized_inputs": true,
+    "normalized_outputs": false,
+    "n_raw_samples": 10000,
+    "update_cycle": 1,
+    "delta": 0.5,
+
+    "adaptive_exploration": false,
+    "target_exploration_coeff": 1,
+    "constraints_exploration_coeff": [1],
+    "feature_mode": "dynamic",
+    "use_matrix_inversion_appoximation": false,
+    "first_run": 1,
+    "last_run": 11,
+    "use_cuda": true,
+    "optimal_point": [0.20169, 0.150011, 0.476874, 0.275332, 0.311652, 0.6573], 
+    "best_feasible_y": -3.32237
+}

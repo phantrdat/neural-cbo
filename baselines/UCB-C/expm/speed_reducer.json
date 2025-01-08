@@ -1,0 +1,410 @@
+{   
+    "dimension": 7,
+    "best_feasible_y": 2.9944e3,
+    "target": {
+        "module_name": "speed_reducer",
+        "identifier": "SpeedReducer",
+        "n_init_observations": 3,
+        "use_standardization": false,
+        "noise_std": 10,
+        "ard": true,
+        "is_hyperparameter_trainable": true,
+        "gp_prior": {
+            "lengthscale": {
+                "gamma": {
+                    "concentration": 0.25,
+                    "rate": 0.5
+                }
+            },
+            "outputscale": {
+                "gamma": {
+                    "concentration": 2.0,
+                    "rate": 0.15
+                }
+            },
+            "noise_std": {
+                "gaussian": {
+                    "loc": 0.0,
+                    "scale": 0.1
+                }
+            }
+        }
+    },
+    "constraints": [
+        {
+            "module_name": "speed_reducer_constraint1",
+            "identifier": "SpeedReducerConstraint1",
+            "share_observation_with_constraint": -1,
+            "n_init_observations": 3,
+            "use_standardization": false,
+            "noise_std": 1,
+            "ard": true,
+            "is_hyperparameter_trainable": true,
+            "inequality": "less_than_equal_to",
+            "threshold": 0,
+            "fix_mean_at": 0,
+            "gp_prior": {
+                "lengthscale": {
+                    "gamma": {
+                        "concentration": 0.25,
+                        "rate": 0.5
+                    }
+                },
+                "outputscale": {
+                    "gamma": {
+                        "concentration": 2.0,
+                        "rate": 0.15
+                    }
+                },
+                "noise_std": {
+                    "gaussian": {
+                        "loc": 0.0,
+                        "scale": 0.1
+                    }
+                }
+            }
+        }, 
+
+        {
+            "module_name": "speed_reducer_constraint2",
+            "identifier": "SpeedReducerConstraint2",
+            "share_observation_with_constraint": -1,
+            "n_init_observations": 3,
+            "use_standardization": false,
+            "noise_std": 1,
+            "ard": true,
+            "is_hyperparameter_trainable": true,
+            "inequality": "less_than_equal_to",
+            "threshold": 0,
+            "fix_mean_at": 0,
+            "gp_prior": {
+                "lengthscale": {
+                    "gamma": {
+                        "concentration": 0.25,
+                        "rate": 0.5
+                    }
+                },
+                "outputscale": {
+                    "gamma": {
+                        "concentration": 2.0,
+                        "rate": 0.15
+                    }
+                },
+                "noise_std": {
+                    "gaussian": {
+                        "loc": 0.0,
+                        "scale": 0.1
+                    }
+                }
+            }
+        },
+        {
+            "module_name": "speed_reducer_constraint3",
+            "identifier": "SpeedReducerConstraint3",
+            "share_observation_with_constraint": -1,
+            "n_init_observations": 3,
+            "use_standardization": false,
+            "noise_std": 1,
+            "ard": true,
+            "is_hyperparameter_trainable": true,
+            "inequality": "less_than_equal_to",
+            "threshold": 0,
+            "fix_mean_at": 0,
+            "gp_prior": {
+                "lengthscale": {
+                    "gamma": {
+                        "concentration": 0.25,
+                        "rate": 0.5
+                    }
+                },
+                "outputscale": {
+                    "gamma": {
+                        "concentration": 2.0,
+                        "rate": 0.15
+                    }
+                },
+                "noise_std": {
+                    "gaussian": {
+                        "loc": 0.0,
+                        "scale": 0.1
+                    }
+                }
+            }
+        },
+
+        {
+            "module_name": "speed_reducer_constraint4",
+            "identifier": "SpeedReducerConstraint4",
+            "share_observation_with_constraint": -1,
+            "n_init_observations": 3,
+            "use_standardization": false,
+            "noise_std": 1,
+            "ard": true,
+            "is_hyperparameter_trainable": true,
+            "inequality": "less_than_equal_to",
+            "threshold": 0,
+            "fix_mean_at": 0,
+            "gp_prior": {
+                "lengthscale": {
+                    "gamma": {
+                        "concentration": 0.25,
+                        "rate": 0.5
+                    }
+                },
+                "outputscale": {
+                    "gamma": {
+                        "concentration": 2.0,
+                        "rate": 0.15
+                    }
+                },
+                "noise_std": {
+                    "gaussian": {
+                        "loc": 0.0,
+                        "scale": 0.1
+                    }
+                }
+            }
+        },
+
+        {
+            "module_name": "speed_reducer_constraint5",
+            "identifier": "SpeedReducerConstraint5",
+            "share_observation_with_constraint": -1,
+            "n_init_observations": 3,
+            "use_standardization": false,
+            "noise_std": 10,
+            "ard": true,
+            "is_hyperparameter_trainable": true,
+            "inequality": "less_than_equal_to",
+            "threshold": 0,
+            "fix_mean_at": 0,
+            "gp_prior": {
+                "lengthscale": {
+                    "gamma": {
+                        "concentration": 0.25,
+                        "rate": 0.5
+                    }
+                },
+                "outputscale": {
+                    "gamma": {
+                        "concentration": 2.0,
+                        "rate": 0.15
+                    }
+                },
+                "noise_std": {
+                    "gaussian": {
+                        "loc": 0.0,
+                        "scale": 100
+                    }
+                }
+            }
+        },
+        {
+            "module_name": "speed_reducer_constraint6",
+            "identifier": "SpeedReducerConstraint6",
+            "share_observation_with_constraint": -1,
+            "n_init_observations": 3,
+            "use_standardization": false,
+            "noise_std": 10,
+            "ard": true,
+            "is_hyperparameter_trainable": true,
+            "inequality": "less_than_equal_to",
+            "threshold": 0,
+            "fix_mean_at": 0,
+            "gp_prior": {
+                "lengthscale": {
+                    "gamma": {
+                        "concentration": 0.25,
+                        "rate": 0.5
+                    }
+                },
+                "outputscale": {
+                    "gamma": {
+                        "concentration": 2.0,
+                        "rate": 0.15
+                    }
+                },
+                "noise_std": {
+                    "gaussian": {
+                        "loc": 0.0,
+                        "scale": 10
+                    }
+                }
+            }
+        }, 
+
+        {
+            "module_name": "speed_reducer_constraint7",
+            "identifier": "SpeedReducerConstraint7",
+            "share_observation_with_constraint": -1,
+            "n_init_observations": 3,
+            "use_standardization": false,
+            "noise_std": 1,
+            "ard": true,
+            "is_hyperparameter_trainable": true,
+            "inequality": "less_than_equal_to",
+            "threshold": 0,
+            "fix_mean_at": 0,
+            "gp_prior": {
+                "lengthscale": {
+                    "gamma": {
+                        "concentration": 0.25,
+                        "rate": 0.5
+                    }
+                },
+                "outputscale": {
+                    "gamma": {
+                        "concentration": 2.0,
+                        "rate": 0.15
+                    }
+                },
+                "noise_std": {
+                    "gaussian": {
+                        "loc": 0.0,
+                        "scale": 0.1
+                    }
+                }
+            }
+        },
+        {
+            "module_name": "speed_reducer_constraint8",
+            "identifier": "SpeedReducerConstraint8",
+            "share_observation_with_constraint": -1,
+            "n_init_observations": 3,
+            "use_standardization": false,
+            "noise_std": 1,
+            "ard": true,
+            "is_hyperparameter_trainable": true,
+            "inequality": "less_than_equal_to",
+            "threshold": 0,
+            "fix_mean_at": 0,
+            "gp_prior": {
+                "lengthscale": {
+                    "gamma": {
+                        "concentration": 0.25,
+                        "rate": 0.5
+                    }
+                },
+                "outputscale": {
+                    "gamma": {
+                        "concentration": 2.0,
+                        "rate": 0.15
+                    }
+                },
+                "noise_std": {
+                    "gaussian": {
+                        "loc": 0.0,
+                        "scale": 0.1
+                    }
+                }
+            }
+        },
+
+        {
+            "module_name": "speed_reducer_constraint9",
+            "identifier": "SpeedReducerConstraint9",
+            "share_observation_with_constraint": -1,
+            "n_init_observations": 3,
+            "use_standardization": false,
+            "noise_std": 1,
+            "ard": true,
+            "is_hyperparameter_trainable": true,
+            "inequality": "less_than_equal_to",
+            "threshold": 0,
+            "fix_mean_at": 0,
+            "gp_prior": {
+                "lengthscale": {
+                    "gamma": {
+                        "concentration": 0.25,
+                        "rate": 0.5
+                    }
+                },
+                "outputscale": {
+                    "gamma": {
+                        "concentration": 2.0,
+                        "rate": 0.15
+                    }
+                },
+                "noise_std": {
+                    "gaussian": {
+                        "loc": 0.0,
+                        "scale": 0.1
+                    }
+                }
+            }
+        },
+
+        {
+            "module_name": "speed_reducer_constraint10",
+            "identifier": "SpeedReducerConstraint10",
+            "share_observation_with_constraint": -1,
+            "n_init_observations": 3,
+            "use_standardization": false,
+            "noise_std": 1,
+            "ard": true,
+            "is_hyperparameter_trainable": true,
+            "inequality": "less_than_equal_to",
+            "threshold": 0,
+            "fix_mean_at": 0,
+            "gp_prior": {
+                "lengthscale": {
+                    "gamma": {
+                        "concentration": 0.25,
+                        "rate": 0.5
+                    }
+                },
+                "outputscale": {
+                    "gamma": {
+                        "concentration": 2.0,
+                        "rate": 0.15
+                    }
+                },
+                "noise_std": {
+                    "gaussian": {
+                        "loc": 0.0,
+                        "scale": 0.1
+                    }
+                }
+            }
+        },
+        {
+            "module_name": "speed_reducer_constraint11",
+            "identifier": "SpeedReducerConstraint11",
+            "share_observation_with_constraint": -1,
+            "n_init_observations": 3,
+            "use_standardization": false,
+            "noise_std": 5,
+            "ard": true,
+            "is_hyperparameter_trainable": true,
+            "inequality": "less_than_equal_to",
+            "threshold": 0,
+            "fix_mean_at": 0,
+            "gp_prior": {
+                "lengthscale": {
+                    "gamma": {
+                        "concentration": 0.25,
+                        "rate": 0.5
+                    }
+                },
+                "outputscale": {
+                    "gamma": {
+                        "concentration": 2.0,
+                        "rate": 0.15
+                    }
+                },
+                "noise_std": {
+                    "gaussian": {
+                        "loc": 0.0,
+                        "scale": 0.1
+                    }
+                }
+            }
+        }
+    ],
+    "xsize": 20,
+    "zsize": 20,
+    "n_bo_iterations": 100,
+    "beta": 40.0,
+    "n_training_iter_gp_hyper": 10,
+    "update_gp_hyper_every_iter": 1
+}

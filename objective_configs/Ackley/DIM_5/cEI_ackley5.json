@@ -1,0 +1,17 @@
+{
+    "objective_type": "synthetic",
+    "algorithm_type": "cEI",
+    "function_name": "Ackley",
+    "dimension": 5,
+    "n_constraints": 2,
+    "gp_kernel": "Gaussian",
+    "n_init": 10,
+    "n_iters": 200,
+    "n_raw_samples": 20000,
+    "discretize_num": 30,
+    "first_run": 11,
+    "last_run": 31,
+    "use_cuda": true, 
+    "optimal_point": [-2.59677896, -2.65782326, -2.60622396, -2.63445386, -2.60167055], 
+    "best_feasible_y": -10.389344963644422
+}

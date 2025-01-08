@@ -1,0 +1,105 @@
+{
+    "target": {
+        "module_name": "branin",
+        "identifier": "original_2_1",
+        "n_init_observations": 3,
+        "use_standardization": false,
+        "noise_std": 0.01,
+        "ard": true,
+        "is_hyperparameter_trainable": true,
+        "gp_prior": {
+            "lengthscale": {
+                "gamma": {
+                    "concentration": 0.25,
+                    "rate": 0.5
+                }
+            },
+            "outputscale": {
+                "gamma": {
+                    "concentration": 2.0,
+                    "rate": 0.15
+                }
+            },
+            "noise_std": {
+                "gaussian": {
+                    "loc": 0.0,
+                    "scale": 0.1
+                }
+            }
+        }
+    },
+    "constraints": [
+        {
+            "module_name": "branin",
+            "share_observation_with_constraint": -1,
+            "identifier": "original_2_1",
+            "n_init_observations": 3,
+            "use_standardization": false,
+            "noise_std": 0.01,
+            "ard": true,
+            "is_hyperparameter_trainable": true,
+            "inequality": "less_than_equal_to",
+            "threshold": 0.6,
+            "fix_mean_at": 0.6,
+            "gp_prior": {
+                "lengthscale": {
+                    "gamma": {
+                        "concentration": 0.25,
+                        "rate": 0.5
+                    }
+                },
+                "outputscale": {
+                    "gamma": {
+                        "concentration": 2.0,
+                        "rate": 0.15
+                    }
+                },
+                "noise_std": {
+                    "gaussian": {
+                        "loc": 0.0,
+                        "scale": 0.1
+                    }
+                }
+            }
+        },
+        {
+            "module_name": "goldstein",
+            "share_observation_with_constraint": -1,
+            "identifier": "original_2_4-xhshiftonly_0_5",
+            "n_init_observations": 3,
+            "use_standardization": false,
+            "noise_std": 0.01,
+            "ard": true,
+            "is_hyperparameter_trainable": true,
+            "inequality": "greater_than_equal_to",
+            "threshold": 0.7,
+            "fix_mean_at": 0.7,
+            "gp_prior": {
+                "lengthscale": {
+                    "gamma": {
+                        "concentration": 0.25,
+                        "rate": 0.5
+                    }
+                },
+                "outputscale": {
+                    "gamma": {
+                        "concentration": 2.0,
+                        "rate": 0.15
+                    }
+                },
+                "noise_std": {
+                    "gaussian": {
+                        "loc": 0.0,
+                        "scale": 0.1
+                    }
+                }
+            }
+        }
+    ],
+    "xsize": 100,
+    "zsize": 100,
+    "n_bo_iterations": 90,
+    "beta": 35.0,
+    "n_training_iter_gp_hyper": 30,
+    "update_gp_hyper_every_iter": 1
+}
