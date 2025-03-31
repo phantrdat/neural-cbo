@@ -1,6 +1,6 @@
 # Project Name
 
-This repository contains the source code and configurations for our Neural-CBO paper submitted to AISTATS 2025. 
+This repository contains the source code and configurations for our Neural-CBO paper submitted to UAI 2025. 
 
 ## Requirements
 
