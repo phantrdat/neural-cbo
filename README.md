@@ -1,5 +1,5 @@
 # Neural-CBO
-This repository contains the source code and configurations for our Neural-CBO paper submitted to UAI 2025. 
+This repository contains the source code and configurations for our Neural-CBO paper accepted inUAI 2025. 
 
 ## Requirements
 
